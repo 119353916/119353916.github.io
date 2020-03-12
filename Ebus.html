@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>O'Donovan Consulting</title>
+	<link rel="stylesheet" type= "text/css" href= "IvansProject.css">
+</head>
+
+<body>
+	<div class="header">
+		<div class="left">
+			<img src="Logo.png" alt="Company Logo" align="left" width="150" height="100">
+		</div>
+		
+		<h1 align="center" class="text1">O'Donovan Consulting</h1>
+		<p class="text2" align="center">For all your Consulting Needs</p>
+	</div>
+
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="Interests.html">Interests</a>
+		<a href="CV.html">CV</a>
+		<a href="ConsultingServices.html">Consulting Services</a>
+		<a href="Ebus.html">Ebusiness Calculator</a>
+	</div>
+
+<script type="text/javascript">
+
+
+function calcSub()
+{
+var hyper = document.getElementById("rd1").value;
+var multi = document.getElementById("rd2").value;
+var cloud = document.getElementById("rd3").value;
+
+if(rd1.checked==true)
+ document.getElementById("subtotal").value = hyper
+else if (rd2.checked==true)
+document.getElementById("subtotal").value = multi
+else if (rd3.checked==true)
+document.getElementById("subtotal").value = cloud
+else
+alert("Please Select a Service")
+}
+
+
+
+function calcDiscount()
+{
+var Subtotal = document.getElementById("subtotal").value;
+var Discount
+parseInt(Subtotal) 
+document.getElementById("discount").value = Subtotal*0.05
+}
+
+function calcVAT()
+{
+var VAT
+var Subtotal = document.getElementById("subtotal").value;
+document.getElementById("vat").value = Subtotal*0.20
+
+
+}
+ function calcTotal()
+ {
+ var Subtotal = document.getElementById("subtotal").value;
+ var Discount = document.getElementById("discount").value;
+ parseInt(Discount)
+ var VAT = document.getElementById("vat").value;
+ parseInt(VAT)
+ 
+ document.getElementById("total").value =Subtotal-Discount+parseInt(VAT)
+ 
+ }
+ 
+ function calcClear()
+ {
+ document.getElementById('subtotal').value = ''
+ document.getElementById('discount').value = ''
+ document.getElementById('vat').value = ''
+ document.getElementById('total').value = ''
+ }
+
+
+</script>
+
+
+
+<div class="form">
+	
+            <h1 class="form">Ebusiness Calculator</h1>
+            <input id="rd1" name="grp1" type="radio" value="600" /> HyperAutomation
+			    <br/>
+            <input id="rd2" name="grp1" type="radio" value="700" /> Multi-Experience
+				<br/>
+            <input id="rd3" name="grp1" type="radio" value="800" /> Distributed Cloud
+				<br/>
+           
+			<p>Subtotal</p><input id="subtotal" type="text" readonly />
+			    <br/>
+			<p>Discount @ 5%</p><input id="discount" type="text" readonly />
+			    <br/>
+		    <p>Vat @ 20%</p><input id="vat" type="text" readonly />
+			    <br/>
+			<p>Total Cost</p><input id="total" type="text" readonly  />
+			    <br/>
+			 <button onclick="calcSub(), calcDiscount(), calcVAT(), calcTotal();" id="btn1">Calculate Figures</button>
+			    <br/>
+            <button id="clear" onclick="calcClear()">Clear Sections</button>
+	
+</div>
+<div class="footer">
+	<div class="row2">
+		<div class="column2">
+		<p>Contact details:<br>
+		Phone No - 087 *******<br>
+		Address - * ******** ******* ********</p>
+		</div>
+		<div class="column2">
+		<img src="UccImage.webp" alt="UCC Logo" align="right" width="255" height="100">
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
