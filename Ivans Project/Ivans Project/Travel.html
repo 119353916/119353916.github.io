@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Travel Interests</title>
+	<link rel="stylesheet" type= "text/css" href= "IvansProject.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="header">
+		<div class="left">
+			<img src="Logo.png" alt="Company Logo" align="left" width="150" height="100">
+		</div>
+		
+		<h1 align="center" class="text1">O'Donovan Consulting</h1>
+		<p class="text2" align="center">For all your Consulting Needs</p>
+	</div>
+
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="Interests.html">Interests</a>
+		<a href="CV.html">CV</a>
+		<a href="ConsultingServices.html">Consulting Services</a>
+		<a href="Ebus.html">Ebusiness Calculator</a>
+	</div>
+
+
+<h2 class="text3" align="center">Traveling Experiences</h2>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+	
+	
+	<div id="container"> 
+  <ul id="imgs">
+    <li><img src="Portugal1.jpeg" alt="Sports" /></li>
+    <li><img src="Portugal2.jpeg" alt="Sports" /></li>
+    <li><img src="Portugal3.jpeg" alt="Sports" /></li>
+    <li><img src="Portugal4.jpeg" alt="Sports" /></li>
+    <li><img src="Portugal5.jpeg" alt="Sports" /></li>
+    <li><img src="Portugal6.jpeg" alt="Sports" /></li>
+    <li><img src="Portugal7.jpeg" alt="Sports" /></li>
+	<li><img src="Barcelona1.jpeg" alt="Sports" /></li>
+	<li><img src="Barcelona2.jpeg" alt="Sports" /></li>
+	<li><img src="Barcelona3.jpeg" alt="Sports" /></li>
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="ImageScroll.js"></script> 
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:1200,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+
+
+
+
+	<div class="row">
+	  <div class="column3">
+		<div class="box">
+			<h3 align="center" class="text3">Portugal</h3>
+			<img src="PortugalMap.jpg" alt="Map Of Portugal" align="right">
+			<p class="text2" align="center">In 2017 I went on a family trip to Portugal
+			We ventured across the Algarve and visited 
+			many towns such as Lagos,Sangreas,Albulferia,Portimao 
+			and Mia Priea.Hopefully the slideshow above can 
+			show a glimpse into the trip<p>
+		</div>
+	  </div>
+	
+	  <div class="column4">
+		<div class="box">
+			<h3 align="center" class="text3">Barcelona</h3>
+			<img src="BarcelonaMap.jpg" alt="Map of Barcelona" align="right" height="255" width="255">
+			<p class="text2" align="center">In Transition Year in my Secondary school 
+			we went on a class trip to Barcelona.
+			The trip was very enjoyable and we visited many 
+			famous landmarks such as the Nou Camp, Fuerteventura
+			and Monserrat.We also Explored the inner workings
+			of Barcelona City</p>
+		</div>
+	</div>
+</div>
+
+
+	<div class="footer">
+	<div class="row2">
+		<div class="column2">
+		<p>Contact details:<br>
+		Phone No - 087 *******<br>
+		Address - * ******** ******* ********</p>
+		</div>
+		<div class="column2">
+	    <img src="UccImage.webp" alt="UCC Logo" align="right" width="255" height="100">
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>
